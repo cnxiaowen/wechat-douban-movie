@@ -1,12 +1,30 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/movies/index",
+    "pages/mine/mine"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#ffae00",
+    "navigationBarTitleText": "电影排行榜",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/movies/index",
+        "text": "电影",
+        "iconPath": "images/tabbar/movie.png",
+        "selectedIconPath": "images/tabbar/movieSelected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/tabbar/mine.png",
+        "selectedIconPath": "images/tabbar/mineSelected.png"
+      }
+    ],
+    "borderStyle": "black",
+    "selectedColor": "#ffae00"
   }
 }
