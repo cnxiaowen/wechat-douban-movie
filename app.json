@@ -1,13 +1,14 @@
 {
-  "pages":[
+  "pages": [
+    "pages/movies/ratingbar/ratingbar",
     "pages/movies/index",
     "pages/mine/mine"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ffae00",
     "navigationBarTitleText": "电影排行榜",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "list": [
