@@ -1,2 +1,12 @@
 <!--pages/movies/ratingbar/ratingbar.wxml-->
-<text>pages/movies/ratingbar/ratingbar.wxml</text>
+<view class='ratingbar-stars'>
+  <!--全黄星星-->
+  <image src='/images/ratingbar/star_fill_whole.png'/>
+  <image src='/images/ratingbar/star_fill_whole.png'/>
+  <image src='../../../images/ratingbar/star_fill_whole.png'/>
+  <!--半黄半灰星星-->
+  <image src='/images/ratingbar/star_fill_half.png'/> 
+  <!--全灰星星-->
+  <image src='../../../images/ratingbar/star_fill_none.png'/>
+</view> 
+

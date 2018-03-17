@@ -1,1 +1,16 @@
 /* pages/movies/ratingbar/ratingbar.wxss */
+/* class="ratingbar-stars"的控件的样式 */
+.ratingbar-stars {
+  display: flex;
+  flex-direction: row;
+  padding-right: 4rpx;
+}
+
+/* class="ratingbar-stars"的控件下所包含的image控件的样式 */
+.ratingbar-stars image {
+  height: 17rpx;
+  width: 17rpx;
+  padding-top: 5rpx;
+  padding-right: 4rpx;
+}
+
