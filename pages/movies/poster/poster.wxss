@@ -1,0 +1,33 @@
+/* pages/movies/poster/poster.wxss */
+
+/* 导入评分条模板wxss文件，注意是@import */
+@import "../ratingbar/ratingbar.wxss";
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  padding-right: 12rpx;  
+}
+
+.poster {
+  width: 200rpx;
+  height: 270rpx;
+  padding-bottom: 10rpx;
+}
+
+.movie-name {
+  color: #333333;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  margin: 10rpx 0 5rpx 0;
+}
+
+.ratingbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.ratingbar-score{
+  color: #999999;
+  font-size: 20rpx;
+}

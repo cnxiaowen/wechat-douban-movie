@@ -1,0 +1,18 @@
+<!--pages/movies/poster/poster.wxml-->
+
+<!--导入评分条模板wxml文件，注意别少了后面的 / 符号-->
+<import src="../ratingbar/ratingbar.wxml" />
+
+<view class='movie' catchtap='catchTapMovie' data-movieid='{{id}}'>
+  <!--海报图-->
+  <image class="poster" src='{{images.large}}'></image>
+  <!--电影名称-->
+  <text class='movie-name'>{{title}}</text>
+  <!--评分星星和数字-->
+  <view class='ratingbar'>
+    <!--评分条-->
+    <template is="template-ratingbar-stars" data="{{...rating}}" />
+    <!--评分分数-->
+    <text class='ratingbar-score'>{{rating.average}}</text>
+  </view>
+</view>
