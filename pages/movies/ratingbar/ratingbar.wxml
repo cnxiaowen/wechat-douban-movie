@@ -1,12 +1,14 @@
 <!--pages/movies/ratingbar/ratingbar.wxml-->
-<view class='ratingbar-stars'>
-  <!--全黄星星-->
-  <image src='/images/ratingbar/star_fill_whole.png'/>
-  <image src='/images/ratingbar/star_fill_whole.png'/>
-  <image src='../../../images/ratingbar/star_fill_whole.png'/>
-  <!--半黄半灰星星-->
-  <image src='/images/ratingbar/star_fill_half.png'/> 
-  <!--全灰星星-->
-  <image src='../../../images/ratingbar/star_fill_none.png'/>
-</view> 
-
+<template name="template-ratingbar-stars">
+  <view class='ratingbar-stars'>
+    <!--数组长度为5，共5次循环显示5颗星星-->
+    <block wx:for="{{[3,5,6,8,9]}}">
+      <!--全黄星星-->
+      <image wx:if="{{stars/10>=index+1}}" src='/images/ratingbar/star_fill_whole.png' />
+      <!--半黄半灰星星-->
+      <image wx:elif="{{stars/10>=index && stars%10!=0}}" src='/images/ratingbar/star_fill_half.png' />
+      <!--全灰星星-->
+      <image wx:else src='/images/ratingbar/star_fill_none.png' />
+    </block>
+  </view>
+</template>
