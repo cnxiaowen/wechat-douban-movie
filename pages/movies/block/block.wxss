@@ -1,0 +1,50 @@
+/* pages/movies/block/block.wxss */
+
+/* 导入电影海报模板的WXSS */
+@import "../poster/poster.wxss";
+
+.block-title-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30rpx 20rpx 0rpx 20rpx;
+}
+
+.block-title {
+  color: #333333;
+  font-size: 30rpx;
+}
+
+.block-more {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.block-more-text {
+  color: #ffae00;
+  font-size: 24rpx;
+}
+
+.block-more-icon {
+  width: 12rpx;
+  height: 20rpx;
+  padding-left: 6rpx; 
+}
+
+.block-scroll-view {
+  display: flex;
+  flex-direction: row;
+}
+
+.block-movie-row{
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx 0 20rpx 20rpx;
+}
+
+.block-movie-card {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10rpx;
+}
