@@ -1,2 +1,10 @@
 <!--pages/movies/index.wxml-->
-<text>pages/movies/index.wxml</text>
+
+<!--导入block区块模板-->
+<import src="block/block.wxml"/>
+
+<!--for循环取出三个区块的数据，填入模板-->
+<view wx:for="{{threeBlockInfo}}" wx:for-item="blockInfo">
+  <template is="template-block" data="{{...blockInfo}}"/>
+</view>  
+

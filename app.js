@@ -1,5 +1,12 @@
 //app.js
 App({
+
+  //全局数据
+  globalData: {
+    //基本网址
+    baseUrl: "http://t.yushu.im"
+  },
+
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -32,8 +39,6 @@ App({
         }
       }
     })
-  },
-  globalData: {
-    userInfo: null
   }
+
 })

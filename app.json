@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/movies/block/block",
     "pages/movies/index",
     "pages/mine/mine"
   ],
