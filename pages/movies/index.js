@@ -22,10 +22,6 @@ Page({
    * 本页面第一次加载时调用
    */
   onLoad: function (options) {
-    //设置页面标题
-    wx.setNavigationBarTitle({
-      title: '电影排行榜',
-    })
 
     //基本网址
     var baseUrl = app.globalData.baseUrl;
@@ -67,5 +63,17 @@ Page({
     this.setData({
       threeBlockInfo: this.data.threeBlockInfo
     })
+  },
+
+  /**
+   * 点击“电影条目”，携带电影id到“详情”页面
+   */
+  catchTapMovie(event) {
+    console.log(event);
+    var id = event.currentTarget.dataset.movieid;
+    wx.navigateTo({
+      url: 'detail/detail?movieId=' + id
+    })
   }
+
 })

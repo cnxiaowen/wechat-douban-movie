@@ -1,0 +1,100 @@
+/* pages/detail/detail.wxss */
+
+/* 导入评分条模板的wxss */
+@import '../ratingbar/ratingbar.wxss';
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 24rpx;
+}
+
+.banner-image {
+  width: 100%;
+  height: 350rpx;
+  filter: blur(10rpx);
+  -webkit-filter:blur(10rpx); 
+}
+
+.poster {
+  position: absolute;
+  height: 238rpx;
+  width: 175rpx;
+  top: 150rpx;
+  left: 20rpx;
+}
+
+.name {
+  position: absolute;
+  top: 180rpx;
+  font-size: 32rpx;
+  font-style: bold;
+  color: white;
+  left: 215rpx;
+}
+
+.name-en {
+  top: 220rpx;
+}
+
+.score-container {
+  position: absolute;
+  top: 270rpx;
+  left: 215rpx;
+  display: flex;
+  flex-direction: row;
+  line-height: 60rpx;
+}
+
+.score {
+  font-size: 60rpx;
+  color: white;
+  line-height: 60rpx;
+}
+
+.ratingbar-comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 5rpx;
+}
+
+.comment {
+  color: white;
+  font-size: 20rpx;
+}
+
+.text {
+  margin: 5rpx 20rpx;
+  font-size: 26rpx;
+} 
+
+.genres {
+  margin: 60rpx 0 5rpx 20rpx;
+}
+
+.countries{
+  margin-left: 14rpx;
+}
+
+.wish-reviews-container {
+  display: flex;
+  flex-direction: row;
+  margin: 40rpx 20rpx;
+  justify-content: space-between;
+  color: orange;
+}
+
+.wish-reviews {
+  border: solid 1px orange;
+  border-radius: 4px;
+  width: 47%;
+  padding: 8rpx 0;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.summary-title {
+  margin: 20rpx;
+  color: grey;
+}

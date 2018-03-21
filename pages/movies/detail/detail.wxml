@@ -1,0 +1,43 @@
+<!--pages/detail/detail.wxml-->
+
+<!--导入评分条模板-->
+<import src="../ratingbar/ratingbar.wxml"/>
+
+<view class='detail-container'>
+  <!--顶部背景图-->
+  <image class='banner-image' src='{{poster}}' mode='aspectFill'></image>
+  <image class='poster' src="{{poster}}"></image>
+  <!--电影名称-->
+  <text class='name'>{{chineseTitle}}</text>
+  <!--电影名称2，通常为外文名-->
+  <text class='name name-en'>{{foreignTitle}}</text>
+  <view class='score-container'>
+    <!--电影评分-->
+    <text class='score'>{{score}}</text>
+    <view class='ratingbar-comment'>
+      <!--评分星星条-->
+      <template is="template-ratingbar-stars" data="{{stars}}"/>
+      <!--评价人数-->
+      <text class='comment'>{{comments_count}}人评价</text>
+    </view>
+  </view>
+  <!--电影流派，如剧情、喜剧、古装等-->
+  <text class='text genres'>{{genres}}</text>
+  <view class='text'>
+    <!--上映年份-->
+    <text>{{year}}年上映</text>
+    <!--国家-->
+    <text class='countries'>{{countries}}</text>
+  </view>
+  
+  <text class='text'>{{directorsAndCasts}}</text>
+
+  <view class='wish-reviews-container'>
+    <text class='wish-reviews'>想看：{{wish_count}}</text>
+    <text class='wish-reviews'>看过：{{reviews_count}}</text>
+  </view>
+
+  <text class='summary-title text'>{{chineseTitle}}的剧情简介</text>
+  <text class='text'>{{summary}}</text>
+
+</view>
