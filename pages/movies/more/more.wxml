@@ -1,0 +1,14 @@
+<!--pages/movies/more/more.wxml-->
+
+<!--导入电影海报模板-->
+<import src="../poster/poster.wxml"/>
+
+<!--竖向的scroll-view，有个滑到底部监听事件loadMore-->
+<scroll-view class='more-container' scroll-y="{{true}}" bindscrolltolower="loadMore">
+  <!--for循环取出电影信息，变成海报形式排列-->
+  <block wx:for="{{allMovies}}" wx:for-item="movie">
+    <view class='more-poster'>
+      <template is="template-poster" data="{{...movie}}"/>
+    </view>
+  </block>
+</scroll-view>

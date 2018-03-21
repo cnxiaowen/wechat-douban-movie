@@ -2,7 +2,8 @@
   "pages": [
     "pages/movies/index",
     "pages/mine/mine",
-    "pages/movies/detail/detail"
+    "pages/movies/detail/detail",
+    "pages/movies/more/more"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -10,6 +10,7 @@
     <view class='block-title-bar'>
       <!--类别标题，如正在热映-->
       <text class='block-title'>{{blockTitle}}</text>
+      <!--更多和右箭头按钮-->
       <view class='block-more' catchtap='catchMore' data-title='{{blockTitle}}'>
         <!--更多-->
         <text class='block-more-text'>更多</text>

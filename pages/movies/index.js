@@ -74,6 +74,19 @@ Page({
     wx.navigateTo({
       url: 'detail/detail?movieId=' + id
     })
+  },
+
+  /**
+   * 点击“更多”按钮，携带类别信息到“更多”页面
+   */
+  catchMore: function (event) {
+    console.log(event)
+    //获得区块的标题
+    var title = event.currentTarget.dataset.title
+    //跳转到“更多页”，将区块标题通过category携带过去
+    wx.navigateTo({
+      url: 'more/more?category=' + title
+    })
   }
 
 })
