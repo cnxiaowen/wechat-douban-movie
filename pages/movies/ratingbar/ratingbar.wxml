@@ -2,7 +2,7 @@
 <template name="template-ratingbar-stars">
   <view class='ratingbar-stars'>
     <!--数组长度为5，共5次循环显示5颗星星-->
-    <block wx:for="{{[3,5,6,8,9]}}">
+    <block wx:for="{{[3,5,6,8,9]}}" wx:for-item="item" wx:key="item">
       <!--全黄星星-->
       <image wx:if="{{stars/10>=index+1}}" src='/images/ratingbar/star_fill_whole.png' />
       <!--半黄半灰星星-->

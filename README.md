@@ -1,3 +1,4 @@
-### 边做边学入门微信小程序之仿豆瓣评分
+### 简介
 
-https://mp.weixin.qq.com/s/yIjBhNkyaTdFMT6f64eOyA
+> desc: 仿豆瓣评分小程序
+> author: 徐纯文

@@ -1,9 +1,12 @@
 {
   "pages": [
     "pages/movies/index",
-    "pages/mine/mine",
     "pages/movies/detail/detail",
-    "pages/movies/more/more"
+    "pages/movies/block/block",
+    "pages/movies/poster/poster",
+    "pages/movies/ratingbar/ratingbar",
+    "pages/movies/more/more",
+    "pages/mine/mine"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -28,5 +31,6 @@
     ],
     "borderStyle": "black",
     "selectedColor": "#ffae00"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

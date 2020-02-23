@@ -17,8 +17,8 @@ function processTitle(subjects, count){
 }
 
 /**
-   * 获取电影名称的分割位置（电影名称通常由中外文组成并以空格分隔）
-   */
+  * 获取电影名称的分割位置（电影名称通常由中外文组成并以空格分隔）
+  */
 function getTitleSeparateIndex(title) {
   if (title == null) {
     return -1;

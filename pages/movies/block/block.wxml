@@ -21,7 +21,7 @@
     <!--电影海报展示条-->
     <scroll-view scroll-x="{{true}}" class='block-scroll-view'>
       <view class='block-movie-row'>
-        <block wx:for="{{blockMovies.subjects}}" wx:for-item="poster">
+        <block wx:for="{{blockMovies.subjects}}" wx:for-item="poster" wx:key="id">
           <!--单个电影海报-->
           <view class='block-movie-card'>
             <template is="template-poster" data="{{...poster}}" />

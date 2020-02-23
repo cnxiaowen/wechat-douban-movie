@@ -49,7 +49,6 @@ Page({
    * blockTitle 区块标题
    */
   processResult: function (result, key, blockTitle) {
-    console.log(result.subjects)
     //处理电影名称过长的问题，截取前8位
     stringUtil.processTitle(result.subjects, 8);
 
@@ -69,7 +68,6 @@ Page({
    * 点击“电影条目”，携带电影id到“详情”页面
    */
   catchTapMovie(event) {
-    console.log(event);
     var id = event.currentTarget.dataset.movieid;
     wx.navigateTo({
       url: 'detail/detail?movieId=' + id
@@ -80,7 +78,6 @@ Page({
    * 点击“更多”按钮，携带类别信息到“更多”页面
    */
   catchMore: function (event) {
-    console.log(event)
     //获得区块的标题
     var title = event.currentTarget.dataset.title
     //跳转到“更多页”，将区块标题通过category携带过去

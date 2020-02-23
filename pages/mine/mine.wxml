@@ -1,2 +1,5 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+
+<view class="view-mine">
+  <image class="img-coming-soon" src="/images/mine/coming-soon.png"></image>
+</view>
