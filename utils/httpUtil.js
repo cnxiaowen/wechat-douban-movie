@@ -7,6 +7,9 @@
 function request(url, successCallback){
   wx.request({
     url: url,
+    header: {
+      'content-type': 'application/xml'
+    },
     success: function(res){
       successCallback(res.data);
     }
@@ -24,6 +27,9 @@ function request(url, successCallback){
 function requestBlockMovies(url, key, title, successCallback) {
   wx.request({
     url: url,
+    header: {
+      'content-type': 'application/xml'
+    },
     success: function (res) {
       successCallback(res.data, key, title);
     }
